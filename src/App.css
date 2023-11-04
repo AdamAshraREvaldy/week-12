@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,62 @@
   to {
     transform: rotate(360deg);
   }
+} */
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
 }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.restart {
+  background: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.restart:hover {
+  background-color: #45a049;
+}
+
+
